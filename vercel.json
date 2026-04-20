@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "name": "niannian-proxy",
+  "builds": [
+    {
+      "src": "api/**/*.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "/api/[func].js"
+    }
+  ],
+  "env": {
+    "WX_APPID": "@wx_appid",
+    "WX_SECRET": "@wx_secret",
+    "WX_ENV_ID": "@wx_env_id"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "name": "niannian-proxy",
+  "version": "1.0.0",
+  "description": "念念日记 H5 中转服务 - 将 H5 请求转发到微信云函数",
+  "private": true,
+  "engines": {
+    "node": "24.x"
+  }
+}
